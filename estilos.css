@@ -1,0 +1,21 @@
+
+  p {
+            font-size: 16px;
+            color: white;
+          }
+  h1 {
+            color: red; 
+        }
+  ol li {
+            font-size: 30px;
+        }
+/*Cmbiar color de texto de la sugerencia*/
+    label {
+        color: white; 
+        font-weight: bold; 
+    }
+/*Estilo de la caja de texto */
+    input[type="text"] {
+        padding: 5px;
+        font-size: 16px;
+    }
