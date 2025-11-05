@@ -35,7 +35,7 @@ const video = document.createElement("video");
 // Configuramos las propiedades del video
 video.src = "UPS.mp4";  // 👈 nombre de tu archivo local
 video.width = 640;        // ancho en píxeles
-video.controls = true;    // muestra los controles (play, pausa, etc.)
+//video.controls = true;    // muestra los controles (play, pausa, etc.)
 video.autoplay = true;    // se reproduce al cargar
 video.muted = true;       // necesario para autoplay
 video.loop = true;        // se repite al terminar
