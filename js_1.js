@@ -2,15 +2,15 @@
    console.log("Página cargada correctamente ");
 
     
-   let nombre = prompt("Ingresa tu nombre");
+   //let nombre = prompt("Ingresa tu nombre");
 
     // Mostrar un mensaje en pantalla
-    if (nombre) {
-      console.log("Hola, Bienvenido " + nombre );
-    } else {
-      console.log("Porfavor ingresa tu nombre: " );
-    }
-
+   // if (nombre) {
+   //   console.log("Hola, Bienvenido " + nombre );
+   // } else {
+    //  console.log("Porfavor ingresa tu nombre: " );
+    //}
+document.write("Hola Bienvenido");
 let fecha = new Date();
 console.log(fecha);
 
@@ -25,6 +25,7 @@ console.log(fecha);
             console.log("Sugerencia:", texto);
             event.preventDefault();
         }
+
 
 // Seleccionamos el contenedor donde irá el video
 const contenedor = document.getElementById("contenedor");
@@ -41,4 +42,4 @@ video.muted = true;       // necesario para autoplay
 video.loop = true;        // se repite al terminar
 
 // Agregamos el video al contenedor
-contenedor.appendChild(video);        
+contenedor.appendChild(video);   
