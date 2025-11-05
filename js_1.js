@@ -30,7 +30,7 @@ console.log(fecha);
 const video = document.createElement("video");
 
 // Configurar propiedades del video
-video.src = "https://www.w3schools.com/html/mov_bbb.mp4"; // URL del video
+video.src = "https://www.youtube.com/watch?v=sgsE3bxdtZ0"; // URL del video
 video.autoplay = true; // se reproduce automáticamente
 video.muted = true;    // debe estar silenciado para permitir autoplay
 video.loop = true;     // se repite al finalizar
