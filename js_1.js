@@ -26,4 +26,16 @@ console.log(fecha);
             event.preventDefault();
         }
 
+// Crear el elemento <video>
+const video = document.createElement("video");
 
+// Configurar propiedades del video
+video.src = "https://www.w3schools.com/html/mov_bbb.mp4"; // URL del video
+video.autoplay = true; // se reproduce automáticamente
+video.muted = true;    // debe estar silenciado para permitir autoplay
+video.loop = true;     // se repite al finalizar
+video.width = 640;     // ancho del video
+video.controls = true; // opcional: muestra controles del reproductor
+
+// Agregar el video al documento
+document.body.appendChild(video);
