@@ -26,16 +26,19 @@ console.log(fecha);
             event.preventDefault();
         }
 
-// Crear el elemento <video>
+// Seleccionamos el contenedor donde irá el video
+const contenedor = document.getElementById("contenedor");
+
+// Creamos el elemento <video>
 const video = document.createElement("video");
 
-// Configurar propiedades del video
-video.src = "https://www.youtube.com/watch?v=sgsE3bxdtZ0"; // URL del video
-video.autoplay = true; // se reproduce automáticamente
-video.muted = true;    // debe estar silenciado para permitir autoplay
-video.loop = true;     // se repite al finalizar
-video.width = 640;     // ancho del video
-video.controls = true; // opcional: muestra controles del reproductor
+// Configuramos las propiedades del video
+video.src = "UPS.mp4";  // 👈 nombre de tu archivo local
+video.width = 640;        // ancho en píxeles
+video.controls = true;    // muestra los controles (play, pausa, etc.)
+video.autoplay = true;    // se reproduce al cargar
+video.muted = true;       // necesario para autoplay
+video.loop = true;        // se repite al terminar
 
-// Agregar el video al documento
-document.body.appendChild(video);
+// Agregamos el video al contenedor
+contenedor.appendChild(video);        
