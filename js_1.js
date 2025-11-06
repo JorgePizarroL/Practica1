@@ -26,7 +26,7 @@ console.log(fecha);
             event.preventDefault();
         }
 
-
+//etiqueta para agregar video
 // Seleccionamos el contenedor donde irá el video
 const contenedor = document.getElementById("contenedor");
 
