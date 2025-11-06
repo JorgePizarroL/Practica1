@@ -47,7 +47,7 @@ contenedor.appendChild(video);
 
 //Voz lectura de mensaje
 const addMessage = () => {
-  const text = "Bienvenido a la U P S.";
+  const text = "Hola Bienvenido a la U P S sede Cuenca.";
   const message = new SpeechSynthesisUtterance(text);
   speechSynthesis.speak(message);
 }
