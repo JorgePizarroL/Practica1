@@ -43,3 +43,23 @@ video.loop = true;        // se repite al terminar
 
 // Agregamos el video al contenedor
 contenedor.appendChild(video);   
+
+const addMessage = () => {
+  const text = "Bienvenido a la U P S.";
+  const message = new SpeechSynthesisUtterance(text);
+  speechSynthesis.speak(message);
+}
+
+const pauseResume = () => {
+  if (speechSynthesis.paused)
+    speechSynthesis.resume();
+  else
+    speechSynthesis.pause();
+}
+
+const cancel = () => speechSynthesis.cancel();
+
+const [ttsButton, pauseResumeButton, cancelButton] = document.querySelectorAll("button");
+ttsButton.addEventListener("click", () => addMessage());
+pauseResumeButton.addEventListener("click", () => pauseResume());
+cancelButton.addEventListener("click", () => cancel());
