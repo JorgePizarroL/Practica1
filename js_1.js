@@ -10,9 +10,10 @@
    // } else {
     //  console.log("Porfavor ingresa tu nombre: " );
     //}
-document.write("Hola Bienvenido");
+//document.write("Hola Bienvenido");
 let fecha = new Date();
 console.log(fecha);
+document.write(fecha);
 
         
            
