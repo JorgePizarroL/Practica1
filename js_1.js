@@ -69,4 +69,21 @@ ttsButton.addEventListener("click", () => addMessage());
 pauseResumeButton.addEventListener("click", () => pauseResume());
 cancelButton.addEventListener("click", () => cancel());
 
+window.addEventListener("DOMContentLoaded", () => {
+  const titulo = document.getElementById("titulo");
+  if (!titulo) return; // Evita errores si no existe el elemento
 
+  const texto = "UPS Cuenca, Transforma tu Vida";
+  titulo.textContent = ""; // Limpia el texto antes de escribirlo
+  let i = 0;
+
+  function escribirTexto() {
+    if (i < texto.length) {
+      titulo.textContent += texto.charAt(i);
+      i++;
+      setTimeout(escribirTexto, 200); // velocidad (100 ms por letra)
+    }
+  }
+
+  escribirTexto();
+});
