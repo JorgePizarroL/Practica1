@@ -24,6 +24,9 @@ document.write(fecha);
             // Mostramos el texto en la consola
             
             console.log("Sugerencia:", texto);
+            const message = new SpeechSynthesisUtterance(texto);
+            message.lang = "es-ES";
+            speechSynthesis.speak(message);
             event.preventDefault();
         }
 
@@ -65,3 +68,5 @@ const [ttsButton, pauseResumeButton, cancelButton] = document.querySelectorAll("
 ttsButton.addEventListener("click", () => addMessage());
 pauseResumeButton.addEventListener("click", () => pauseResume());
 cancelButton.addEventListener("click", () => cancel());
+
+
