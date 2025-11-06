@@ -44,6 +44,7 @@ video.loop = true;        // se repite al terminar
 // Agregamos el video al contenedor
 contenedor.appendChild(video);   
 
+//Voz lectura de mensaje
 const addMessage = () => {
   const text = "Bienvenido a la U P S.";
   const message = new SpeechSynthesisUtterance(text);
